@@ -14,7 +14,7 @@ python train_base.py --config_file ../configs/voc/voc07_r101-r34_224-112_kd.yaml
 
 change settings "BASE" and "DATA" of voc07_test_baseline.yaml
 
-python test_base.py --config_file ../configs/voc07_test_baseline.yaml GPU_ID [0]
+python train_kd-2size.py --config_file ../configs/voc07_test_baseline.yaml GPU_ID [0]
 ```
 
 
@@ -24,5 +24,5 @@ python train_base.py --config_file ../configs/voc/voc07_r101-r34_224-112_kd-fsr.
 
 change settings "FSR" and "DATA" of voc07_test_fsr.yaml
 
-python test_base.py --config_file ../configs/voc07_test_fsr.yaml GPU_ID [0]
+python train_kd-fsr-2size.py --config_file ../configs/voc07_test_fsr.yaml GPU_ID [0]
 ```
